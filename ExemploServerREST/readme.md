@@ -9,7 +9,7 @@ Criar um Web Service usando API REST
 * Com a instalação do Node.js intala-se o NMP https://www.npmjs.com/
 * Criar a pasta do projeto
     
->mkdir ExemploClienteSOAP && cd ExemploClienteSOAP
+>mkdir ExemploClienteREST && cd ExemploClienteREST
 * Iniciar o projeto
   >npm init <br>
 
@@ -31,7 +31,7 @@ Criar um Web Service usando API REST
 * criar as pastas
 >mkdir src <br> cd src <br> mkdir controllers <br> mkdir routes
   
-* criar o arquivo server.js
+* criar o arquivo server.js (dentro da pasta ExemploClienteREST fora da pasta src/)
 ```javascript
     const express = require('express');
     const cors = require('cors');
@@ -95,6 +95,6 @@ exports.getById = (req, res, next) => {
 ```
 
 * Para para iniciar o servidor execute o comando:
-> node index.js
+> node server.js
 
 * Teste a API REST com o Postman
